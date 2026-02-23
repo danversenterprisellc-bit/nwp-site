@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Northwest Washington Photography</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <div class="brand">
+        <p class="brand-top">DANVERS ENTERPRISE LLC</p>
+        <h1>Northwest Washington Photography</h1>
+      </div>
+
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="badge">
+            Serving Castle Rock • Longview/Kelso • Kalama • Woodland • Vancouver, WA
+          </p>
+
+          <h2>Capturing real moments with a clean, professional style.</h2>
+
+          <p>
+            Portraits, couples, families, and events — photographed with care and edited
+            to feel natural, timeless, and true to you.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-dark">Book a Session</a>
+            <a href="#gallery" class="btn btn-light">View Gallery</a>
+          </div>
+        </div>
+
+        <div class="hero-collage">
+          <div class="photo ph1">Photo</div>
+          <div class="photo ph2">Photo</div>
+          <div class="photo ph3">Photo</div>
+          <div class="photo ph4">Photo</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section alt">
+      <div class="container">
+        <h3>Photography Services</h3>
+        <p class="section-sub">
+          Customize these with your exact pricing, turnaround times, and package details.
+        </p>
+
+        <div class="cards">
+          <article class="card">
+            <h4>Portrait Sessions</h4>
+            <p>Individual, senior, branding, and lifestyle portraits.</p>
+            <p class="price">Starting at $___</p>
+          </article>
+
+          <article class="card">
+            <h4>Couples & Families</h4>
+            <p>Candid, natural sessions at outdoor or on-location settings.</p>
+            <p class="price">Starting at $___</p>
+          </article>
+
+          <article class="card">
+            <h4>Events</h4>
+            <p>Birthdays, gatherings, and special occasions with edited galleries.</p>
+            <p class="price">Custom Quote</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="section">
+      <div class="container">
+        <h3>Gallery Preview</h3>
+        <p class="section-sub">
+          Replace these placeholders with your best photos.
+        </p>
+
+        <div class="gallery-grid">
+          <div class="gallery-item">1</div>
+          <div class="gallery-item">2</div>
+          <div class="gallery-item">3</div>
+          <div class="gallery-item">4</div>
+          <div class="gallery-item">5</div>
+          <div class="gallery-item">6</div>
+          <div class="gallery-item">7</div>
+          <div class="gallery-item">8</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section alt">
+      <div class="container about-grid">
+        <div class="about-photo">Your Photo</div>
+        <div>
+          <h3>About Northwest Washington Photography</h3>
+          <p>
+            Hi, I’m the photographer behind Northwest Washington Photography. My goal is
+            to make every session comfortable, simple, and enjoyable — so your photos feel
+            genuine instead of forced.
+          </p>
+          <p>
+            I focus on clean editing, natural tones, and creating images you’ll be proud
+            to share and keep for years. Whether you’re booking a portrait, family session,
+            or an event, I work to deliver a professional experience from start to finish.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container contact-grid">
+        <div class="contact-card">
+          <h3>Contact & Booking</h3>
+          <p>Reach out for availability, pricing, and session questions.</p>
+
+          <ul class="contact-list">
+            <li><strong>Phone/Text:</strong> <a href="tel:+15039089901">+1 (503) 908-9901</a></li>
+            <li><strong>Email:</strong> <a href="mailto:nwp.longview@gmail.com">nwp.longview@gmail.com</a></li>
+            <li><strong>Website:</strong> <a href="https://northwestwaphoto.com" target="_blank" rel="noopener">northwestwaphoto.com</a></li>
+            <li><strong>Instagram:</strong> <a href="https://instagram.com/danversenterprisellc" target="_blank" rel="noopener">@danversenterprisellc</a></li>
+            <li><strong>TikTok:</strong> <a href="https://tiktok.com/@danversenterprisellc" target="_blank" rel="noopener">@danversenterprisellc</a></li>
+          </ul>
+        </div>
+
+        <form id="contactForm" class="contact-form">
+          <label>
+            Name
+            <input type="text" name="name" required />
+          </label>
+
+          <label>
+            Email
+            <input type="email" name="email" required />
+          </label>
+
+          <label>
+            What type of session are you looking for?
+            <select name="service" required>
+              <option value="">Select one</option>
+              <option>Portrait</option>
+              <option>Couples</option>
+              <option>Family</option>
+              <option>Event</option>
+              <option>Other</option>
+            </select>
+          </label>
+
+          <label>
+            Message
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+
+          <button type="submit" class="btn btn-dark">Send Inquiry</button>
+          <p id="formMsg" class="form-msg"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Danvers Enterprise LLC DBA Northwest Washington Photography</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
